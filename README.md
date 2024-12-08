@@ -38,7 +38,11 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+FULL ADDER
+
 ![exp 4 (TT1)](https://github.com/user-attachments/assets/7e3238ee-17c1-40a5-9062-815f21116d11)
+
+FULL SUBRACTOR
 
 ![exp 2 (TT2)](https://github.com/user-attachments/assets/af33a305-cb2d-43ae-a806-8722875788e6)
 
@@ -57,6 +61,7 @@ Borrow out = A'Bin + A'B + BBin
 
 **Program:**
 ```
+FULL ADDER
 module fulladder(a,b,cin,sum,carry);
 
 input a,b,cin;
@@ -69,7 +74,7 @@ assign carry= ( (a & b)| ( cin &(a ^ b )));
 
 endmodule
 
-
+FULL SUBRACTOR
 module fs(a,b,bin,difference,borrow);
 
 input a,b,bin;
@@ -89,7 +94,11 @@ endmodule
 
 **RTL Schematic**
 
+FULL ADDER
+
 ![exp 4 (LD1)](https://github.com/user-attachments/assets/abbdedfb-7ca5-44f4-922b-bdb2109fbf15)
+
+FULL SUBRACTOR
 
 ![exp 4 (LD2)](https://github.com/user-attachments/assets/dd4d4384-44f3-445f-97e3-15c2b37a5d53)
 
@@ -97,7 +106,11 @@ endmodule
 
 **Output Timing Waveform**
 
+FULL ADDER
+
 ![image](https://github.com/user-attachments/assets/91a98a9a-a4df-4c55-823a-2d9cee2d444e)
+
+FULL SUBRACTOR
 
 ![image](https://github.com/user-attachments/assets/dcdaf315-4f27-48e1-a25b-271df5590d51)
 
